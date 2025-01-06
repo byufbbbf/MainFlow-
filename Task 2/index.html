@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>F1 - The Ultimate Racing Experience</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>F1</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#drivers">Drivers</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Feel the Thrill of Formula 1 Racing</h1>
+            <p>Experience the speed, passion, and glory of the world's most prestigious motorsport!</p>
+            <a href="#schedule" class="cta-button">Explore Schedule</a>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule">
+        <h2>2025 Season Schedule</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Country</th>
+                    <th>City</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>March 14-16</td>
+                    <td>Australia</td>
+                    <td>Melbourne</td>
+                </tr>
+                <tr>
+                    <td>March 21-23</td>
+                    <td>China</td>
+                    <td>Shanghai</td>
+                </tr>
+                <tr>
+                    <td>April 4-6</td>
+                    <td>Japan</td>
+                    <td>Suzuka</td>
+                </tr>
+                <tr>
+                    <td>April 11-13</td>
+                    <td>Bahrain</td>
+                    <td>Sakhir</td>
+                </tr>
+                <tr>
+                    <td>April 18-20</td>
+                    <td>Saudi Arabia</td>
+                    <td>Jeddah</td>
+                </tr>
+                <tr>
+                    <td>May 2-4</td>
+                    <td>USA</td>
+                    <td>Miami</td>
+                </tr>
+                <tr>
+                    <td>May 16-18</td>
+                    <td>Italy</td>
+                    <td>Imola</td>
+                </tr>
+                <tr>
+                    <td>May 23-25</td>
+                    <td>Monaco</td>
+                    <td>Monaco</td>
+                </tr>
+                <tr>
+                    <td>May 30 – June 1</td>
+                    <td>Spain</td>
+                    <td>Barcelona</td>
+                </tr>
+                <tr>
+                    <td>June 13-15</td>
+                    <td>Canada</td>
+                    <td>Montreal</td>
+                </tr>
+                <tr>
+                    <td>June 27-29</td>
+                    <td>Austria</td>
+                    <td>Spielberg</td>
+                </tr>
+                <tr>
+                    <td>July 4-6</td>
+                    <td>United Kingdom</td>
+                    <td>Silverstone</td>
+                </tr>
+                <tr>
+                    <td>July 25-27</td>
+                    <td>Belgium</td>
+                    <td>Spa</td>
+                </tr>
+                <tr>
+                    <td>August 1-3</td>
+                    <td>Hungary</td>
+                    <td>Budapest</td>
+                </tr>
+                <tr>
+                    <td>August 29-31</td>
+                    <td>Netherlands</td>
+                    <td>Zandvoort</td>
+                </tr>
+                <tr>
+                    <td>September 5-7</td>
+                    <td>Italy</td>
+                    <td>Monza</td>
+                </tr>
+                <tr>
+                    <td>September 19-21</td>
+                    <td>Azerbaijan</td>
+                    <td>Baku</td>
+                </tr>
+                <tr>
+                    <td>October 3-5</td>
+                    <td>Singapore</td>
+                    <td>Singapore</td>
+                </tr>
+                <tr>
+                    <td>October 17-19</td>
+                    <td>USA</td>
+                    <td>Austin</td>
+                </tr>
+                <tr>
+                    <td>October 24-26</td>
+                    <td>Mexico</td>
+                    <td>Mexico City</td>
+                </tr>
+                <tr>
+                    <td>November 7-9</td>
+                    <td>Brazil</td>
+                    <td>Sao Paulo</td>
+                </tr>
+                <tr>
+                    <td>November 20-22</td>
+                    <td>USA</td>
+                    <td>Las Vegas</td>
+                </tr>
+                <tr>
+                    <td>November 28-30</td>
+                    <td>Qatar</td>
+                    <td>Lusail</td>
+                </tr>
+                <tr>
+                    <td>December 5-7</td>
+                    <td>Abu Dhabi</td>
+                    <td>Yas Marina</td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="#drivers" class="cta-button">Meet the Drivers</a>
+    </section>
+
+    <!-- Drivers Section -->
+    <section id="drivers">
+        <h2>Meet the Drivers</h2>
+        <div class="filter-container">
+            <label for="driver-filter">Filter by Driver Category: </label>
+            <select id="driver-filter" onchange="filterDrivers()">
+                <option value="all">All Drivers</option>
+                <option value="championship-winners">Champion Drivers</option>
+                <option value="others">Other Drivers</option>
+            </select>
+        </div>
+        <div class="drivers-container">
+            <div class="driver championship-winners">
+                <img src="images\Lewis Hamilton.JPG" alt="Lewis Hamilton">
+                <p>Lewis Hamilton</p>
+            </div>
+            <div class="driver championship-winners">
+                <img src="images\Fernando Alonso.JPG" alt="Fernando Alonso">
+                <p>Fernando Alonso</p>
+            </div>
+            <div class="driver others">
+                <img src="images\Valtteri Bottas.JPG" alt="Valtteri Bottas">
+                <p>Valtteri Bottas</p>
+            </div>
+            <div class="driver others">
+                <img src="images\Franco Colapinto.JPG" alt="Franco Colapinto">
+                <p>Franco Colapinto</p>
+            </div>
+            <div class="driver others">
+                <img src="images\Jack Doohan.JPG" alt="Jack Doohan">
+                <p>Jack Doohan</p>
+            </div>
+            <div class="driver others">
+                <img src="images\Pierre Gasly.JPG" alt="Pierre Gasly">
+                <p>Pierre Gasly</p>
+            </div>
+            <div class="driver others">
+                <img src="images\Nico Hulkenberg.JPG" alt="Nico Hulkenberg">
+                <p>Nico Hulkenberg</p>
+            </div>
+            <div class="driver others">
+                <img src="images\Liam Lawson.JPG" alt="Liam Lawson">
+                <p>Liam Lawson</p>
+            </div>
+            <div class="driver others">
+                <img src="images\Charles Leclerc.JPG">
+                <p>Charles Leclerc</p>
+            </div>
+            <div class="driver others">
+                <img src="images\Kevin Magnussen.JPG" alt="Kevin Magnussen">
+                <p>Kevin Magnussen</p>
+            </div>
+            <div class="driver others">
+                <img src="images\Lando Norris.JPG" alt="Lando Norris">
+                <p>Lando Norris</p>
+            </div>
+            <div class="driver others">
+                <img src="images\Sergio Perez.JPG" alt="Sergio Perez">
+                <p>Sergio Perez</p>
+            </div>
+            <div class="driver others">
+                <img src="images\Oscar Piastri.JPG" alt="Oscar Piastri">
+                <p>Oscar Piastri</p>
+            </div>
+            <div class="driver others">
+                <img src="images\George Russell.JPG" alt="George Russell">
+                <p>George Russell</p>
+            </div>
+            <div class="driver others">
+                <img src="images\Carlos Sainz.JPG" alt="Carlos Sainz">
+                <p>Carlos Sainz</p>
+            </div>
+            <div class="driver others">
+                <img src="images\Lance Stroll.JPG" alt="Lance Stroll">
+                <p>Lance Stroll</p>
+            </div>
+            <div class="driver others">
+                <img src="images\Yuki Tsunoda.JPG" alt="Yuki Tsunoda">
+                <p>Yuki Tsunoda</p>
+            </div>
+            <div class="driver championship-winners">
+                <img src="images\Max Verstappen.JPG" alt="Max Verstappen">
+                <p>Max Verstappen</p>
+            </div>
+            <div class="driver others">
+                <img src="images\Zhou Guanyu.JPG" alt="Zhou Guanyu">
+                <p>Zhou Guanyu</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function filterDrivers() {
+            const filterValue = document.getElementById('driver-filter').value;
+            const drivers = document.querySelectorAll('.driver');
+
+            drivers.forEach(driver => {
+                if (filterValue === 'all') {
+                    driver.style.display = 'block';
+                } else if (driver.classList.contains(filterValue)) {
+                    driver.style.display = 'block';
+                } else {
+                    driver.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
